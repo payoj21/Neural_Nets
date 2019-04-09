@@ -427,6 +427,7 @@ class Sigmoid(Function):
         """
 
         # Accumulate gradient
+#         print('Sigmoid backward')
         self.parents[0].grad += np.multiply(gradient, self.sigmoid * (1 - self.sigmoid))
 
 
